@@ -1,0 +1,96 @@
+// ── Reset ─────────────────────────────────────────────────────────────────────
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: $text-base;
+  line-height: $leading-normal;
+  color: $text-primary;
+  background-color: $bg-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Subtle brand gradient wash at the top of the page
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 420px;
+  background: linear-gradient(180deg, rgba(9, 105, 218, 0.06) 0%, rgba(9, 105, 218, 0) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+// ── Links ─────────────────────────────────────────────────────────────────────
+
+a {
+  color: $text-link;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $text-link-hover;
+    text-decoration: underline;
+  }
+}
+
+// ── Headings ──────────────────────────────────────────────────────────────────
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: $leading-tight;
+  color: $text-primary;
+}
+
+// ── Media ─────────────────────────────────────────────────────────────────────
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+// ── Main content wrapper ─────────────────────────────────────────────────────
+
+.main-content {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: $content-max;
+  margin: 0 auto;
+  padding: $space-8 $space-6 $space-16;
+
+  @media (min-width: 768px) {
+    padding: $space-12 $space-8 $space-20;
+  }
+}
+
+// ── Utility classes ───────────────────────────────────────────────────────────
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

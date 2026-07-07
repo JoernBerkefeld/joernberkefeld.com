@@ -1,0 +1,116 @@
+// ── Site header (light theme, simplified — no search) ────────────────────────
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: $z-header;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid $border-muted;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: $content-max;
+  margin: 0 auto;
+  height: $header-height;
+  padding: 0 $space-6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+
+  @media (min-width: 768px) {
+    padding: 0 $space-8;
+  }
+}
+
+// Brand
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  min-width: 0;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  color: $text-primary;
+
+  &:hover {
+    text-decoration: none;
+
+    .brand-name {
+      color: $accent-primary;
+    }
+  }
+}
+
+.brand-icon {
+  display: flex;
+  flex-shrink: 0;
+
+  svg {
+    display: block;
+    border-radius: $radius-md;
+  }
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: $text-lg;
+  letter-spacing: -0.01em;
+  color: $text-primary;
+  white-space: nowrap;
+  transition: color $transition-fast;
+}
+
+// Nav
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+}
+
+.header-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-2 $space-3;
+  font-size: $text-sm;
+  font-weight: 500;
+  color: $text-secondary;
+  border-radius: $radius-md;
+  transition: color $transition-fast, background-color $transition-fast;
+
+  &:hover {
+    color: $accent-primary;
+    background-color: $bg-elevated;
+    text-decoration: none;
+  }
+
+  &--icon {
+    padding: $space-2;
+    color: $text-muted;
+
+    svg {
+      display: block;
+    }
+
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+}
+
+// Hide text nav labels on very small screens, keep icons
+
+.header-nav-link--text {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}

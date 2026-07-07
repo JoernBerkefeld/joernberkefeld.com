@@ -1,0 +1,33 @@
+title: "Jörn Berkefeld"
+google_analytics: "G-BSWQDK6CBK"
+description: "Senior Salesforce Technical Architect and open-source tooling author. Creator of ssjs.guide, SFMC DevTools, SFMC Data Loader and more."
+author: "Jörn Berkefeld"
+url: "https://joernberkefeld.com"
+baseurl: ""
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
