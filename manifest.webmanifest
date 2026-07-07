@@ -1,0 +1,26 @@
+{
+  "name": "Jörn Berkefeld",
+  "short_name": "Jörn Berkefeld",
+  "description": "Senior Salesforce Technical Architect and open-source tooling author.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "categories": ["developer", "portfolio"],
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/portrait.png",
+      "sizes": "400x400",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
