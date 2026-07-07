@@ -20,7 +20,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         GitHub
       </a>
       <a class="btn btn-secondary" href="https://ssjs.guide" target="_blank" rel="noopener">
-        {% include icons/link.svg %}
+        {% include icons/ssjs-guide.svg %}
         ssjs.guide
       </a>
     </div>
@@ -35,7 +35,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <p class="project-desc">The complete Server-Side JavaScript reference for Salesforce Marketing Cloud — every function, object, and platform API, with examples.</p>
       <div class="project-tags"><span class="project-tag">SSJS</span><span class="project-tag">Reference</span></div>
       <div class="project-links">
-        <a class="project-link" href="https://ssjs.guide" target="_blank" rel="noopener">{% include icons/link.svg %} Website</a>
+        <a class="project-link" href="https://ssjs.guide" target="_blank" rel="noopener">{% include icons/ssjs-guide.svg %} Website</a>
       </div>
     </div>
     <div class="project-card">
