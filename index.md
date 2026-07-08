@@ -8,8 +8,8 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
   <img class="hero-portrait" src="{{ '/assets/portrait.png' | relative_url }}" alt="Portrait of Jörn Berkefeld" width="200" height="200">
   <div class="hero-body">
     <h1 class="hero-name">Jörn Berkefeld</h1>
-    <p class="hero-role">Senior Salesforce Technical Architect &amp; Open-Source Tooling Author</p>
-    <p class="hero-bio">I build developer tooling for Salesforce Marketing Cloud — CLIs, VS Code extensions, linters, formatters, language intelligence, and reference documentation used by SFMC developers worldwide.</p>
+    <p class="hero-role">Senior Salesforce Technical Architect &amp; 🏆Salesforce Marketing Champion '23 &amp; Open-Source Tooling Author</p>
+    <p class="hero-bio">I am an Enterprise Technical Architect specializing in Salesforce. In my free-time I build developer tooling for Salesforce Marketing Cloud Engagement and Next — CLIs, VS Code extensions, linters, formatters, language intelligence, and reference documentation used by SFMC developers worldwide.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://www.linkedin.com/in/joernberkefeld/" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -18,6 +18,10 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <a class="btn btn-secondary" href="https://github.com/JoernBerkefeld" target="_blank" rel="noopener">
         {% include icons/github.svg %}
         GitHub
+      </a>
+      <a class="btn btn-secondary" href="https://marketplace.visualstudio.com/publishers/joernberkefeld" target="_blank" rel="noopener">
+        {% include icons/vscode.svg %}
+        Marketplace
       </a>
       <a class="btn btn-secondary" href="https://ssjs.guide" target="_blank" rel="noopener">
         {% include icons/ssjs-guide.svg %}
@@ -59,6 +63,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">CI/CD</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/mcdev" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/Accenture/sfmc-devtools" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -67,6 +72,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">VS Code</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=Accenture-oss.sfmc-devtools-vscode" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/Accenture/sfmc-devtools-vscode" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
   </div>
@@ -82,6 +88,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Data</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/sfmc-dataloader" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/sfmc-dataloader" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -90,6 +97,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">VS Code</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.sfmc-data" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/vscode-sfmc-dataloader" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -109,7 +117,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
   <div class="project-grid">
     <div class="project-card">
       <div class="project-title">SFMC Language Service</div>
-      <p class="project-desc">Syntax highlighting, autocompletion, hover docs, and diagnostics for AMPscript and SSJS in VS Code — powered by ssjs.guide.</p>
+      <p class="project-desc">Syntax highlighting, autocompletion, hover docs, and diagnostics for AMPscript, SSJS, and Handlebars in VS Code — for Salesforce Marketing Cloud Engagement+Next, powered by ssjs.guide.</p>
       <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">LSP</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.sfmc-language" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
@@ -118,7 +126,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
     </div>
     <div class="project-card">
       <div class="project-title">MCP Server for SFMC</div>
-      <p class="project-desc">A Model Context Protocol server that gives AI assistants deep, accurate knowledge of SFMC AMPscript and SSJS.</p>
+      <p class="project-desc">A Model Context Protocol server that gives AI assistants deep, accurate knowledge of AMPscript, SSJS, and Handlebars for Salesforce Marketing Cloud Engagement+Next.</p>
       <div class="project-tags"><span class="project-tag">MCP</span><span class="project-tag">AI</span></div>
       <div class="project-links">
         <a class="project-link" href="https://github.com/JoernBerkefeld/mcp-server-sfmc" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
@@ -133,10 +141,11 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
   <div class="project-grid">
     <div class="project-card">
       <div class="project-title">eslint-plugin-sfmc</div>
-      <p class="project-desc">ESLint rules for AMPscript and SSJS that catch SFMC-specific mistakes before they ship — powered by ssjs.guide.</p>
+      <p class="project-desc">ESLint rules for AMPscript, SSJS, and Handlebars that catch Salesforce Marketing Cloud Engagement+Next mistakes before they ship — powered by ssjs.guide.</p>
       <div class="project-tags"><span class="project-tag">ESLint</span><span class="project-tag">SFMC</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/eslint-plugin-sfmc" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/eslint-plugin-sfmc" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -145,14 +154,16 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">ESLint</span><span class="project-tag">Email</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/eslint-plugin-mso-email" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/eslint-plugin-mso-email" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
       <div class="project-title">prettier-plugin-sfmc</div>
-      <p class="project-desc">A Prettier plugin that formats AMPscript and SSJS consistently — powered by ssjs.guide.</p>
+      <p class="project-desc">A Prettier plugin that formats AMPscript, SSJS, and Handlebars consistently for Salesforce Marketing Cloud Engagement+Next — powered by ssjs.guide.</p>
       <div class="project-tags"><span class="project-tag">Prettier</span><span class="project-tag">SFMC</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/prettier-plugin-sfmc" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/prettier-plugin-sfmc" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -162,6 +173,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">ESLint</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/eslint-config-ssjs" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/eslint-config-ssjs" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
   </div>
@@ -177,6 +189,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">Pack</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.sfmc-extension-pack" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/vscode-sfmc-extension-pack" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -185,6 +198,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">Pack</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.sfmc-extension-pack-expanded" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/vscode-sfmc-extension-pack-expanded" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
   </div>
@@ -199,6 +213,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">Email</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.mso-conditionals" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/vscode-mso-conditionals" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
     <div class="project-card">
@@ -207,6 +222,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">Markdown</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.markdown-preview-bitbucket-innersource" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/markdown-preview-bitbucket-innersource" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
   </div>
