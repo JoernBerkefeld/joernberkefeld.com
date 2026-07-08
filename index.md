@@ -34,7 +34,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
 <section class="section">
   <h2 class="section-heading">Websites</h2>
   <div class="project-grid">
-    <div class="project-card">
+    <div class="project-card" data-gh="JoernBerkefeld/ssjs.guide">
       <div class="project-title">ssjs.guide</div>
       <p class="project-desc">The complete Server-Side JavaScript reference for Salesforce Marketing Cloud — every function, object, and platform API, with examples.</p>
       <div class="project-tags"><span class="project-tag">SSJS</span><span class="project-tag">Reference</span></div>
@@ -42,7 +42,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         <a class="project-link" href="https://ssjs.guide" target="_blank" rel="noopener">{% include icons/ssjs-guide.svg %} Website</a>
       </div>
     </div>
-    <div class="project-card">
+    <div class="project-card" data-gh="JoernBerkefeld/SFMC-Cookbook">
       <div class="project-title">SFMC Cookbook</div>
       <p class="project-desc">My earlier collection of practical Salesforce Marketing Cloud recipes and how-tos.</p>
       <div class="project-tags"><span class="project-tag">SFMC</span><span class="project-tag">Guides</span></div>
@@ -214,7 +214,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
 </section>
 
 <section class="section">
-  <h2 class="section-heading">More VS Code Extensions</h2>
+  <h2 class="section-heading">More Tools &amp; Extensions</h2>
   <div class="project-grid">
     <div class="project-card">
       <div class="project-title">MSO Conditionals</div>
@@ -232,6 +232,23 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.markdown-preview-bitbucket-innersource" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
         <a class="project-link" href="https://github.com/JoernBerkefeld/markdown-preview-bitbucket-innersource" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">SFMC Boilerplate</div>
+      <p class="project-desc">Automatically bundle your SSJS, AMPscript, and front-end files into deployable CloudPages and emails for Salesforce Marketing Cloud.</p>
+      <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">SFMC</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://www.npmjs.com/package/sfmc-boilerplate" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/SFMC-boilerplate" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">SFMC numberToLocaleString</div>
+      <p class="project-desc">An SSJS polyfill that converts numbers into localized strings with the right thousand and decimal separators for Salesforce Marketing Cloud.</p>
+      <div class="project-tags"><span class="project-tag">SSJS</span><span class="project-tag">Polyfill</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/JoernBerkefeld/SFMC-numberToLocaleString" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
   </div>
