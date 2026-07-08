@@ -274,6 +274,67 @@
   }
 }
 
+// ── Live project stats ────────────────────────────────────────────────────────
+
+.project-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+  margin-top: $space-1;
+}
+
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  min-height: 1.55rem;
+  padding: 0.2em 0.55em;
+  font-family: $font-mono;
+  font-size: $text-xs;
+  color: $text-secondary;
+  background-color: $bg-elevated;
+  border: 1px solid $border-muted;
+  border-radius: $radius-full;
+
+  svg {
+    display: block;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    color: $text-muted;
+  }
+
+  &.is-loading {
+    width: 3.25rem;
+    border-color: transparent;
+    background-color: $bg-elevated;
+    background-image: linear-gradient(
+      90deg,
+      $bg-elevated 0%,
+      $bg-hover 50%,
+      $bg-elevated 100%
+    );
+    background-size: 200% 100%;
+    animation: stat-shimmer 1.2s ease-in-out infinite;
+  }
+}
+
+@keyframes stat-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-chip.is-loading {
+    background-image: none;
+    animation: none;
+  }
+}
+
 // ── Footer (light theme) ──────────────────────────────────────────────────────
 
 .site-footer {
