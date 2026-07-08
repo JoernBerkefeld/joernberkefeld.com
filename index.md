@@ -116,11 +116,20 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
   <p class="section-intro">Editor smarts and AI integration for AMPscript and SSJS.</p>
   <div class="project-grid">
     <div class="project-card">
-      <div class="project-title">SFMC Language Service</div>
-      <p class="project-desc">Syntax highlighting, autocompletion, hover docs, and diagnostics for AMPscript, SSJS, and Handlebars in VS Code — for Salesforce Marketing Cloud Engagement+Next, powered by ssjs.guide.</p>
-      <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">LSP</span></div>
+      <div class="project-title">SFMC Language for VS Code</div>
+      <p class="project-desc">A VS Code extension bringing syntax highlighting, autocompletion, hover docs, and diagnostics for AMPscript, SSJS, and Handlebars to Salesforce Marketing Cloud Engagement+Next — powered by ssjs.guide.</p>
+      <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">SFMC</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.sfmc-language" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/vscode-sfmc-language" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">sfmc-language-lsp</div>
+      <p class="project-desc">The language server behind the VS Code extension — a reusable Language Server Protocol implementation providing AMPscript, SSJS, and Handlebars intelligence for Salesforce Marketing Cloud Engagement+Next.</p>
+      <div class="project-tags"><span class="project-tag">LSP</span><span class="project-tag">SFMC</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://www.npmjs.com/package/sfmc-language-lsp" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
         <a class="project-link" href="https://github.com/JoernBerkefeld/sfmc-language-lsp" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
