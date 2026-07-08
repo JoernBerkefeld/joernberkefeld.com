@@ -153,6 +153,13 @@ const VSCE_RE = /marketplace\.visualstudio\.com\/items\?itemName=([^&#]+)/i;
  */
 function parseCard(card) {
     const ids = {};
+    // Optional stars-only source: a repo whose link isn't shown on the card
+    // (e.g. website cards that want a star count but no GitHub link).
+    const ghAttr = card.dataset.gh;
+    if (ghAttr) {
+        const m = GH_RE.exec(`github.com/${ghAttr}`) || /^([^/]+\/[^/?#]+)$/.exec(ghAttr);
+        if (m) ids.gh = m[1].replace(/\.git$/, '');
+    }
     for (const a of card.querySelectorAll('a[href]')) {
         const href = a.getAttribute('href');
         if (!ids.gh) {
