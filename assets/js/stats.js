@@ -278,54 +278,65 @@ async function run() {
 
     if (!pending.length) return;
 
-    // Resolve GitHub stars per repo (cached individually), npm + Marketplace batched.
+    // Each group resolves independently: a failure in one metric (or a single
+    // rate-limited GitHub call) never removes another group's chips. Any chip
+    // still in the loading state after its own fetch settles is removed.
     const ghPending = pending.filter((p) => p.kind === 'gh');
 
     const tasks = [
+        // GitHub stars: one call per repo, each settled on its own so a single
+        // rate-limited response only drops its own chip.
         ...ghPending.map((p) =>
-            fetchStars(p.id).then((v) => {
-                cacheSet(`gh:${p.id}`, v);
-                fillChip(p.chip, ICONS.star, v);
-            })
+            fetchStars(p.id)
+                .then((v) => {
+                    cacheSet(`gh:${p.id}`, v);
+                    fillChip(p.chip, ICONS.star, v);
+                })
+                .catch(() => p.chip.remove())
         ),
         npmWanted.size
-            ? fetchNpmBatch([...npmWanted]).then((map) => {
-                  for (const p of pending) {
-                      if (p.kind !== 'npm') continue;
-                      const v = map[p.id];
-                      if (v == null) {
-                          p.chip.remove();
-                          continue;
+            ? fetchNpmBatch([...npmWanted])
+                  .then((map) => {
+                      for (const p of pending) {
+                          if (p.kind !== 'npm') continue;
+                          const v = map[p.id];
+                          if (v == null) {
+                              p.chip.remove();
+                              continue;
+                          }
+                          cacheSet(`npm:${p.id}`, v);
+                          fillChip(p.chip, ICONS.npm, v, '/wk');
                       }
-                      cacheSet(`npm:${p.id}`, v);
-                      fillChip(p.chip, ICONS.npm, v, '/wk');
-                  }
-              })
+                  })
+                  .catch(() => {
+                      for (const p of pending) {
+                          if (p.kind === 'npm') p.chip.remove();
+                      }
+                  })
             : Promise.resolve(),
         vsceWanted.size
-            ? fetchMarketplaceBatch([...vsceWanted]).then((map) => {
-                  for (const p of pending) {
-                      if (p.kind !== 'vsce') continue;
-                      const v = map[p.id];
-                      if (v == null) {
-                          p.chip.remove();
-                          continue;
+            ? fetchMarketplaceBatch([...vsceWanted])
+                  .then((map) => {
+                      for (const p of pending) {
+                          if (p.kind !== 'vsce') continue;
+                          const v = map[p.id];
+                          if (v == null) {
+                              p.chip.remove();
+                              continue;
+                          }
+                          cacheSet(`vsce:${p.id}`, v);
+                          fillChip(p.chip, ICONS.install, v);
                       }
-                      cacheSet(`vsce:${p.id}`, v);
-                      fillChip(p.chip, ICONS.install, v);
-                  }
-              })
+                  })
+                  .catch(() => {
+                      for (const p of pending) {
+                          if (p.kind === 'vsce') p.chip.remove();
+                      }
+                  })
             : Promise.resolve(),
     ];
 
-    const results = await Promise.allSettled(tasks);
-
-    // Remove any chip whose fetch rejected (batch failures affect their group).
-    if (results.some((r) => r.status === 'rejected')) {
-        for (const p of pending) {
-            if (p.chip.classList.contains('is-loading')) p.chip.remove();
-        }
-    }
+    await Promise.allSettled(tasks);
 }
 
 if (document.readyState === 'loading') {
