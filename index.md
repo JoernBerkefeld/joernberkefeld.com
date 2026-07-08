@@ -8,7 +8,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
   <img class="hero-portrait" src="{{ '/assets/portrait.png' | relative_url }}" alt="Portrait of Jörn Berkefeld" width="200" height="200">
   <div class="hero-body">
     <h1 class="hero-name">Jörn Berkefeld</h1>
-    <p class="hero-role">Senior Salesforce Technical Architect &amp; 🏆Salesforce Marketing Champion '23 &amp; Open-Source Tooling Author</p>
+    <p class="hero-role">Senior Salesforce Technical Architect<br>🏆Salesforce Marketing Champion '23<br>Open-Source Tooling Author</p>
     <p class="hero-bio">I am an Enterprise Technical Architect specializing in Salesforce. In my free-time I build developer tooling for Salesforce Marketing Cloud Engagement and Next — CLIs, VS Code extensions, linters, formatters, language intelligence, and reference documentation used by SFMC developers worldwide.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://www.linkedin.com/in/joernberkefeld/" target="_blank" rel="noopener">
