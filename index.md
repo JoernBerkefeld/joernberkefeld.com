@@ -104,6 +104,12 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-title">SFMC Data Loader App</div>
       <p class="project-desc">A cross-platform desktop application for bulk Data Extension imports and exports.</p>
       <div class="project-tags"><span class="project-tag">Desktop</span></div>
+      <div class="project-shots">
+        <button class="shot-btn" type="button" data-src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-connections.png' | relative_url }}" data-caption="Connections"><img src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-connections.png' | relative_url }}" alt="SFMC Data Loader App — connections screen" loading="lazy"></button>
+        <button class="shot-btn" type="button" data-src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-export.png' | relative_url }}" data-caption="Export"><img src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-export.png' | relative_url }}" alt="SFMC Data Loader App — export screen" loading="lazy"></button>
+        <button class="shot-btn" type="button" data-src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-import.png' | relative_url }}" data-caption="Import"><img src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-import.png' | relative_url }}" alt="SFMC Data Loader App — import screen" loading="lazy"></button>
+        <button class="shot-btn" type="button" data-src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-settings.png' | relative_url }}" data-caption="Settings"><img src="{{ '/assets/img/sfmc-dataloader-app/sfmc-dataloader-app-settings.png' | relative_url }}" alt="SFMC Data Loader App — settings screen" loading="lazy"></button>
+      </div>
       <div class="project-links">
         <a class="project-link" href="https://github.com/JoernBerkefeld/sfmc-dataloader-app" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
