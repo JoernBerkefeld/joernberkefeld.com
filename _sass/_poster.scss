@@ -335,6 +335,161 @@
   }
 }
 
+// ── Screenshot strip + lightbox ───────────────────────────────────────────────
+
+.project-shots {
+  display: flex;
+  gap: $space-2;
+  overflow-x: auto;
+  padding-bottom: $space-1;
+}
+
+.shot-btn {
+  flex: 0 0 auto;
+  display: block;
+  padding: 0;
+  border: 1px solid $border-muted;
+  border-radius: $radius-md;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  transition: border-color $transition-fast, transform $transition-fast;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $accent-light;
+    transform: scale(1.03);
+    outline: none;
+  }
+
+  img {
+    display: block;
+    width: 132px;
+    height: auto;
+  }
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: $z-overlay;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: $space-12 $space-16;
+  background-color: rgba($text-primary, 0.82);
+  backdrop-filter: blur(2px);
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+.lightbox-figure {
+  margin: 0;
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  align-items: center;
+}
+
+.lightbox-img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border-radius: $radius-md;
+  box-shadow: $shadow-lg;
+  background-color: $bg-base;
+}
+
+.lightbox-caption {
+  color: #fff;
+  font-size: $text-sm;
+  opacity: 0.85;
+  font-family: $font-mono;
+}
+
+.lightbox-count {
+  position: absolute;
+  top: $space-5;
+  left: $space-5;
+  color: #fff;
+  opacity: 0.7;
+  font-size: $text-xs;
+  font-family: $font-mono;
+}
+
+.lightbox-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: $radius-full;
+  border: 1px solid rgba(#fff, 0.4);
+  background-color: rgba($text-primary, 0.55);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $transition-fast, border-color $transition-fast;
+
+  &:hover {
+    background-color: $accent-primary;
+    border-color: $accent-light;
+  }
+
+  &.lightbox-prev {
+    left: $space-4;
+  }
+
+  &.lightbox-next {
+    right: $space-4;
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: $space-4;
+  right: $space-4;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: $radius-full;
+  border: 1px solid rgba(#fff, 0.4);
+  background-color: rgba($text-primary, 0.55);
+  color: #fff;
+  font-size: $text-xl;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $transition-fast;
+
+  &:hover {
+    background-color: $accent-primary;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shot-btn {
+    transition: border-color $transition-fast;
+
+    &:hover,
+    &:focus-visible {
+      transform: none;
+    }
+  }
+}
+
 // ── Footer (light theme) ──────────────────────────────────────────────────────
 
 .site-footer {
