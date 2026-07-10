@@ -21,7 +21,13 @@
     </nav>
   </div>
   <div class="footer-copyright">
-    <p>&copy; {{ site.time | date: "%Y" }} Jörn Berkefeld</p>
+    <p>
+      &copy; {{ site.time | date: "%Y" }} Jörn Berkefeld
+      &middot; <a href="{{ '/privacy/' | relative_url }}" class="footer-social-link">Privacy</a>
+      {% if jekyll.environment == "production" and site.google_analytics %}
+      &middot; <button type="button" class="footer-cookie-btn" data-cc="show-preferencesModal">Manage cookies</button>
+      {% endif %}
+    </p>
     <p class="footer-disclaimer">The views and opinions expressed here are my own and do not represent those of any employer, client, or affiliated organisation. Not affiliated with or endorsed by Salesforce.</p>
   </div>
 </footer>
