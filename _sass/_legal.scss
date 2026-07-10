@@ -1,0 +1,68 @@
+// ── Legal / prose pages (privacy, cookie policy) ─────────────────────────────
+// Minimal readable typography for long-form text pages that use the default
+// layout. Scoped to .legal-page so it never affects the landing page.
+
+.legal-page {
+  h1 {
+    font-size: $text-4xl;
+    margin-bottom: $space-2;
+  }
+
+  h2 {
+    font-size: $text-2xl;
+    margin-top: $space-10;
+    margin-bottom: $space-3;
+    padding-bottom: $space-2;
+    border-bottom: 1px solid $border-muted;
+  }
+
+  h3 {
+    font-size: $text-lg;
+    margin-top: $space-6;
+    margin-bottom: $space-2;
+  }
+
+  p,
+  ul,
+  ol,
+  table {
+    margin-bottom: $space-4;
+  }
+
+  ul,
+  ol {
+    padding-left: $space-6;
+  }
+
+  li {
+    margin-bottom: $space-2;
+  }
+
+  em {
+    color: $text-muted;
+  }
+
+  // Cookie table
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: $text-sm;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: $space-2 $space-3;
+    border: 1px solid $border-muted;
+    vertical-align: top;
+  }
+
+  thead th {
+    background: $bg-surface;
+    font-weight: 600;
+  }
+
+  tbody tr:nth-child(even) {
+    background: $bg-surface;
+  }
+}
