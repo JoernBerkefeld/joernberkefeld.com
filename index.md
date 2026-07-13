@@ -173,6 +173,15 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       </div>
     </div>
     <div class="project-card">
+      <div class="project-title">eslint-plugin-mcdev</div>
+      <p class="project-desc">Runs your mcdev metadata validations as ESLint diagnostics — lint retrieved SFMC metadata in CI and in VS Code using your existing .mcdev-validations.js.</p>
+      <div class="project-tags"><span class="project-tag">ESLint</span><span class="project-tag">SFMC</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://www.npmjs.com/package/eslint-plugin-mcdev" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/eslint-plugin-mcdev" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
       <div class="project-title">prettier-plugin-sfmc</div>
       <p class="project-desc">A Prettier plugin that formats AMPscript, SSJS, and Handlebars consistently for Salesforce Marketing Cloud Engagement+Next — powered by ssjs.guide.</p>
       <div class="project-tags"><span class="project-tag">Prettier</span><span class="project-tag">SFMC</span></div>
