@@ -123,7 +123,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
   <div class="project-grid">
     <div class="project-card">
       <div class="project-title">SFMC Language for VS Code</div>
-      <p class="project-desc">A VS Code extension bringing syntax highlighting, autocompletion, hover docs, and diagnostics for AMPscript, SSJS, and Handlebars to Salesforce Marketing Cloud Engagement+Next — powered by ssjs.guide.</p>
+      <p class="project-desc">A VS Code extension bringing syntax highlighting, autocompletion, hover docs, diagnostics, and built-in formatting for AMPscript, SSJS, and Handlebars to Salesforce Marketing Cloud Engagement+Next — powered by ssjs.guide.</p>
       <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">SFMC</span></div>
       <div class="project-links">
         <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=joernberkefeld.sfmc-language" target="_blank" rel="noopener">{% include icons/vscode.svg %} Marketplace</a>
