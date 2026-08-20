@@ -14,7 +14,7 @@
 
   {% include lightbox.html %}
 
-  <script type="module" src="{{ '/assets/js/stats.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/lightbox.js' | relative_url }}" defer></script>
+  <script type="module" src="{% include cachebust.html path='/assets/js/stats.js' %}"></script>
+  <script src="{% include cachebust.html path='/assets/js/lightbox.js' %}" defer></script>
 </body>
 </html>

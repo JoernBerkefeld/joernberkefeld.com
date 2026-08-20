@@ -1,0 +1,28 @@
+{%- comment -%}
+Automatic cache-busting for local assets (Liquid-only — this site deploys via
+GitHub Pages' built-in build, where custom `_plugins/*.rb` do NOT run).
+
+Appends `?v=<token>` to a site-relative asset URL so browsers re-fetch after a
+deploy. The token is a per-build global value:
+  - On GitHub Pages: `site.github.build_revision` (the deployed commit SHA), so
+    it changes on every deploy.
+  - Locally (`jekyll serve`): falls back to `site.time` (the build timestamp),
+    so it changes on every rebuild.
+
+Per-file content hashing is not possible without a Ruby plugin; a per-build
+token is the robust Liquid-only equivalent that works on Pages auto-build.
+
+Usage:
+  {% include cachebust.html path="/assets/css/main.css" %}
+  <script src="{% include cachebust.html path='/assets/js/lightbox.js' %}"></script>
+
+External URLs (http:, https:, //) are returned unchanged.
+{%- endcomment -%}
+{%- assign _cb_token = site.github.build_revision | default: site.time | date: '%s' -%}
+{%- assign _cb_path = include.path -%}
+{%- if _cb_path contains '://' or _cb_path == '' -%}
+{{- _cb_path -}}
+{%- else -%}
+{%- assign _cb_url = _cb_path | relative_url -%}
+{%- if _cb_url contains '?' -%}{{ _cb_url }}&v={{ _cb_token }}{%- else -%}{{ _cb_url }}?v={{ _cb_token }}{%- endif -%}
+{%- endif -%}

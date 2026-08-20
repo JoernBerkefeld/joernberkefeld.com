@@ -75,6 +75,14 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         <a class="project-link" href="https://github.com/Accenture/sfmc-devtools-vscode" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
+    <div class="project-card">
+      <div class="project-title">SFMC DevTools Pipeline Builder</div>
+      <p class="project-desc">Client-side wizard that turns your <code>.mcdevrc.json</code> into a git-based mcdev deployment pipeline plus a matching <code>.mcdev-validations.js</code> — entirely in your browser.</p>
+      <div class="project-tags"><span class="project-tag">Pipeline</span><span class="project-tag">CI/CD</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://sfmc.guide/tools/mcdev-pipeline-builder/" target="_blank" rel="noopener">{% include icons/link.svg %} Website</a>
+      </div>
+    </div>
   </div>
 </section>
 
