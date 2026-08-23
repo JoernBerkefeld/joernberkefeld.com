@@ -9,6 +9,8 @@
   "scripts": {
     "serve": "bundle exec jekyll serve --source \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com\" --destination \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com/_site\" --port 4000 --host 127.0.0.1 --no-watch",
     "serve:live": "bundle exec jekyll serve --source \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com\" --destination \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com/_site\" --port 4000 --host 127.0.0.1 --livereload",
-    "build": "bundle exec jekyll build --source \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com\" --destination \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com/_site\""
+    "serve:stop": "node scripts/serve-stop.mjs",
+    "build": "bundle exec jekyll build --source \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com\" --destination \"c:/EDF/Git/sfmc-amscript-language/joernberkefeld.com/_site\"",
+    "test": "node --test \"tests/**/*.test.cjs\""
   }
 }
