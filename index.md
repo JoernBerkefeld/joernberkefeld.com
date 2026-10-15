@@ -42,6 +42,14 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         <a class="project-link" href="https://ssjs.guide" target="_blank" rel="noopener">{% include icons/ssjs-guide.svg %} Website</a>
       </div>
     </div>
+    <div class="project-card" data-gh="JoernBerkefeld/sfmc.guide">
+      <div class="project-title">sfmc.guide</div>
+      <p class="project-desc">Technical architecture, developer tooling, and practical patterns for Salesforce Marketing Cloud Engagement and Next.</p>
+      <div class="project-tags"><span class="project-tag">SFMC</span><span class="project-tag">Architecture</span><span class="project-tag">Guides</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://sfmc.guide" target="_blank" rel="noopener">{% include icons/sfmc-guide.svg %} Website</a>
+      </div>
+    </div>
     <div class="project-card" data-gh="JoernBerkefeld/SFMC-Cookbook">
       <div class="project-title">SFMC Cookbook</div>
       <p class="project-desc">My earlier collection of practical Salesforce Marketing Cloud recipes and how-tos.</p>
