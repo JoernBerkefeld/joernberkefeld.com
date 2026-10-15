@@ -75,15 +75,15 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         <a class="project-link" href="https://github.com/Accenture/sfmc-devtools-vscode" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
-    <!-- <div class="project-card">
+    <div class="project-card">
       <div class="project-title">SFMC DevTools Pipeline Builder</div>
       <p class="project-desc">Client-side wizard that turns your <code>.mcdevrc.json</code> into a git-based mcdev deployment pipeline plus a matching <code>.mcdev-validations.js</code> — entirely in your browser.</p>
       <div class="project-tags"><span class="project-tag">Pipeline</span><span class="project-tag">CI/CD</span></div>
       <div class="project-links">
         <a class="project-link" href="https://sfmc.guide/tools/mcdev-pipeline-builder/" target="_blank" rel="noopener">{% include icons/link.svg %} Website</a>
       </div>
-    </div> -->
-        <div class="project-card">
+    </div>
+    <div class="project-card">
       <div class="project-title">eslint-plugin-mcdev</div>
       <p class="project-desc">Runs your mcdev metadata validations as ESLint diagnostics — lint retrieved SFMC metadata in CI and in VS Code using your existing .mcdev-validations.js.</p>
       <div class="project-tags"><span class="project-tag">ESLint</span><span class="project-tag">SFMC</span></div>
@@ -129,6 +129,31 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       </div>
       <div class="project-links">
         <a class="project-link" href="https://github.com/JoernBerkefeld/sfmc-dataloader-app" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <h2 class="section-heading">Marketing Cloud Next</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="project-title">sf-plugin-mcnext</div>
+      <p class="project-desc">Salesforce CLI plugin to inspect, export, and validate selected Marketing Cloud Next configuration and data, including segment member exports and bounded retrieval workflows. Not a complete backup or migration solution.</p>
+      <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Next</span><span class="project-tag">Data</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://www.npmjs.com/package/sf-plugin-mcnext" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/sf-plugin-mcnext" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">sf-plugin-cms</div>
+      <p class="project-desc">Salesforce CLI plugin for CMS inspection, experimental workspace export, create-only workspace import, and narrowly scoped Email lifecycle operations. Single-item Email or Email Template retrieval into editable local source files is unreleased development. Batch retrieval and a deploy command are not included.</p>
+      <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Next</span><span class="project-tag">CMS</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://www.npmjs.com/package/sf-plugin-cms" target="_blank" rel="noopener">{% include icons/npm.svg %} Released package</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/sf-plugin-cms" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
   </div>
