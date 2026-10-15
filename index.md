@@ -157,7 +157,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
     </div>
     <div class="project-card">
       <div class="project-title">sf-plugin-cms</div>
-      <p class="project-desc">Salesforce CLI plugin for CMS inspection, experimental workspace export, create-only workspace import, and narrowly scoped Email lifecycle operations. Single-item and batch retrieval of qualified raw-HTML Email and Email Template sources into editable local files is unreleased development, with strict root/single-variant admission and overwrite protection. A developer deploy command and media source retrieval are not included; see GitHub for exact limits.</p>
+      <p class="project-desc">Salesforce CLI plugin for CMS inspection, experimental workspace export, create-only workspace import, and narrowly scoped Email lifecycle operations. Single-item Email or Email Template retrieval into editable local source files is unreleased development. Batch retrieval and a deploy command are not included.</p>
       <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Next</span><span class="project-tag">CMS</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/sf-plugin-cms" target="_blank" rel="noopener">{% include icons/npm.svg %} Released package</a>
