@@ -27,6 +27,10 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         {% include icons/ssjs-guide.svg %}
         ssjs.guide
       </a>
+      <a class="btn btn-secondary" href="https://sfmc.guide" target="_blank" rel="noopener">
+        {% include icons/sfmc-guide.svg %}
+        sfmc.guide
+      </a>
     </div>
   </div>
 </section>
