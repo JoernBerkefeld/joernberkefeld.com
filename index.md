@@ -161,7 +161,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
     </div>
     <div class="project-card">
       <div class="project-title">sf-plugin-cms</div>
-      <p class="project-desc">Salesforce CLI plugin for CMS inspection, experimental workspace export, create-only workspace import, and narrowly scoped Email lifecycle operations. Single-item Email or Email Template retrieval into editable local source files is unreleased development. Batch retrieval and a deploy command are not included.</p>
+      <p class="project-desc">Salesforce CLI plugin for bounded CMS inspection and Email, Email Template, Image, Document and Audio retrieval, Draft deployment and deletion in version 0.20.0, plus separate loose-image upload. Deploy executes by default; use --preview for read-only preflight. Unreleased 0.21.0 adds bounded five-family metadata publish/unpublish, local-source safeguards, per-item outcomes and all-page workspace/channel lists. See the repository for qualification limits; this is not a complete CMS backup or restore tool.</p>
       <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Next</span><span class="project-tag">CMS</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/sf-plugin-cms" target="_blank" rel="noopener">{% include icons/npm.svg %} Released package</a>
