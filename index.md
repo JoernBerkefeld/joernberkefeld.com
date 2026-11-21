@@ -161,7 +161,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
     </div>
     <div class="project-card">
       <div class="project-title">sf-plugin-cms</div>
-      <p class="project-desc">Salesforce CLI plugin (sf cms) that copies Marketing Cloud CMS content between a workspace and files in Git: retrieve, preview, deploy, delete, publish and unpublish emails, email templates, email fragments, images, documents, audio and brands, across workspaces and orgs. Default variants only. Not a backup or migration tool.</p>
+      <p class="project-desc">Salesforce CLI plugin (sf cms) that copies Marketing Cloud CMS content between a workspace and files in Git: retrieve, preview, deploy, delete, publish and unpublish 24 CMS types (emails, templates, landing pages, forms, media files, messages, brands and more), across workspaces and orgs. Default variants only. Not a backup or migration tool.</p>
       <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Next</span><span class="project-tag">CMS</span></div>
       <div class="project-links">
         <a class="project-link" href="https://www.npmjs.com/package/sf-plugin-cms" target="_blank" rel="noopener">{% include icons/npm.svg %} Released package</a>
