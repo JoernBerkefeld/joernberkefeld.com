@@ -168,6 +168,15 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         <a class="project-link" href="https://github.com/JoernBerkefeld/sf-plugin-cms" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
+    <div class="project-card">
+      <div class="project-title">sf-plugin-data</div>
+      <p class="project-desc">Salesforce CLI plugin (sf data360) that copies Data 360 (Data Cloud) configuration between an org and files in Git: retrieve, preview, deploy and delete DLOs, DMOs, mappings, relationships, data streams, data transforms, data graphs, identity resolution, segments and calculated insights, per data space. Also publishes segments and calculated insights and exports segment members. Not a backup or migration tool.</p>
+      <div class="project-tags"><span class="project-tag">CLI</span><span class="project-tag">Next</span><span class="project-tag">Data 360</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://www.npmjs.com/package/sf-plugin-data" target="_blank" rel="noopener">{% include icons/npm.svg %} npm</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/sf-plugin-data" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -276,6 +285,15 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
 <section class="section">
   <h2 class="section-heading">More Tools &amp; Extensions</h2>
   <div class="project-grid">
+    <div class="project-card">
+      <div class="project-title">SFMC UX Tools</div>
+      <p class="project-desc">A Chrome extension that makes Marketing Cloud easier to work in: AMPscript and SSJS help in its code editors, readable keys instead of random ones, and a list of transactional SMS, push and OTT messages, which Marketing Cloud itself has no place for.</p>
+      <div class="project-tags"><span class="project-tag">Chrome</span><span class="project-tag">SFMC</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://chromewebstore.google.com/detail/icngdchkbniamebbmhebciohjimfmjej" target="_blank" rel="noopener">{% include icons/link.svg %} Chrome Web Store</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/chrome-sfmc-ux-tools" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
     <div class="project-card">
       <div class="project-title">MSO Conditionals</div>
       <p class="project-desc">Hover translations and completion snippets for Outlook (MSO) conditional comments in HTML email.</p>
