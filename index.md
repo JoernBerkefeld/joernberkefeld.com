@@ -66,6 +66,22 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
 </section>
 
 <section class="section">
+  <h2 class="section-heading">SFMC UX Tools</h2>
+  <p class="section-intro">The new star: the best of my other tools, built right into Marketing Cloud's own screens. Install it in Chrome and there is nothing else to set up.</p>
+  <div class="project-grid">
+    <div class="project-card" data-gh="JoernBerkefeld/chrome-sfmc-ux-tools">
+      <div class="project-title">SFMC UX Tools</div>
+      <p class="project-desc">A Chrome extension that makes Marketing Cloud easier to work in: AMPscript and SSJS help in its code editors, readable keys instead of random ones, and a list of transactional SMS, push and OTT messages, which Marketing Cloud itself has no place for.</p>
+      <div class="project-tags"><span class="project-tag">Chrome</span><span class="project-tag">SFMC</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://chromewebstore.google.com/detail/icngdchkbniamebbmhebciohjimfmjej" target="_blank" rel="noopener">{% include icons/link.svg %} Chrome Web Store</a>
+        <a class="project-link" href="https://github.com/JoernBerkefeld/chrome-sfmc-ux-tools" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <h2 class="section-heading">SFMC DevTools</h2>
   <p class="section-intro">Retrieve, deploy, and manage SFMC metadata as code — the de-facto CI/CD toolchain for Marketing Cloud.</p>
   <div class="project-grid">
@@ -177,6 +193,15 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
         <a class="project-link" href="https://github.com/JoernBerkefeld/sf-plugin-data" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
+    <div class="project-card">
+      <div class="project-title">Data 360 DevTools</div>
+      <span class="project-badge">Pre-release</span>
+      <p class="project-desc">Retrieve, deploy, delete and publish Data 360 (Data Cloud) setup from VS Code, with a preview and a confirmation naming the org and data space before every change, plus a Data Spaces side panel.</p>
+      <div class="project-tags"><span class="project-tag">VS Code</span><span class="project-tag">Next</span><span class="project-tag">Data 360</span></div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/JoernBerkefeld/vscode-data360" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -285,15 +310,6 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
 <section class="section">
   <h2 class="section-heading">More Tools &amp; Extensions</h2>
   <div class="project-grid">
-    <div class="project-card">
-      <div class="project-title">SFMC UX Tools</div>
-      <p class="project-desc">A Chrome extension that makes Marketing Cloud easier to work in: AMPscript and SSJS help in its code editors, readable keys instead of random ones, and a list of transactional SMS, push and OTT messages, which Marketing Cloud itself has no place for.</p>
-      <div class="project-tags"><span class="project-tag">Chrome</span><span class="project-tag">SFMC</span></div>
-      <div class="project-links">
-        <a class="project-link" href="https://chromewebstore.google.com/detail/icngdchkbniamebbmhebciohjimfmjej" target="_blank" rel="noopener">{% include icons/link.svg %} Chrome Web Store</a>
-        <a class="project-link" href="https://github.com/JoernBerkefeld/chrome-sfmc-ux-tools" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
-      </div>
-    </div>
     <div class="project-card">
       <div class="project-title">MSO Conditionals</div>
       <p class="project-desc">Hover translations and completion snippets for Outlook (MSO) conditional comments in HTML email.</p>
