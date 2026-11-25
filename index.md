@@ -75,6 +75,7 @@ description: "Jörn Berkefeld — Senior Salesforce Technical Architect and open
       <div class="project-tags"><span class="project-tag">Chrome</span><span class="project-tag">SFMC</span></div>
       <div class="project-links">
         <a class="project-link" href="https://chromewebstore.google.com/detail/icngdchkbniamebbmhebciohjimfmjej" target="_blank" rel="noopener">{% include icons/link.svg %} Chrome Web Store</a>
+        <a class="project-link" href="https://sfmc.guide/tools/chrome-sfmc-ux-tools/" target="_blank" rel="noopener">{% include icons/sfmc-guide.svg %} Features</a>
         <a class="project-link" href="https://github.com/JoernBerkefeld/chrome-sfmc-ux-tools" target="_blank" rel="noopener">{% include icons/github.svg %} GitHub</a>
       </div>
     </div>
